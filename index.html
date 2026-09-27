@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#133e31" />
+    <meta
+      name="description"
+      content="Mercado GB — protótipo de um marketplace simples para comprar e vender na Guiné-Bissau."
+    />
+    <title>Mercado GB — Compra e vende perto de ti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <svg class="icon-library" aria-hidden="true">
+      <symbol id="i-search" viewBox="0 0 24 24"><path d="m21 21-4.4-4.4m2.4-5.1a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" /></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" /></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21a8 8 0 0 0-16 0m12-13a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" /></symbol>
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8v10h-6v-6H9v6H3V11Z" /></symbol>
+      <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 10v10h16V10M3 4h18l-2 6a3 3 0 0 1-5 0 3 3 0 0 1-4 0 3 3 0 0 1-5 0L3 4Zm6 16v-6h6v6" /></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="m5 12 14 0m-6-6 6 6-6 6" /></symbol>
+      <symbol id="i-back" viewBox="0 0 24 24"><path d="m19 12-14 0m6 6-6-6 6-6" /></symbol>
+      <symbol id="i-map" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="2.5" /></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" /><path d="m9 12 2 2 4-4" /></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" /></symbol>
+      <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10m-7 6h4" /></symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></symbol>
+      <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c1 .4 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></symbol>
+      <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4m-5 5 5-5 5 5M4 16v4h16v-4"/></symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16m-10 4v6m4-6v6M9 7l1-3h4l1 3m3 0-1 14H7L6 7"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3ZM5 15l.8 2.2L8 18l-2.2.8L5 21l-.8-2.2L2 18l2.2-.8L5 15Zm14-2 .8 2.2L22 16l-2.2.8L19 19l-.8-2.2L16 16l2.2-.8L19 13Z"/></symbol>
+    </svg>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a href="#/" class="brand" aria-label="Mercado GB, página inicial">
+          <span class="brand-mark">M</span>
+          <span>Mercado <strong>GB</strong></span>
+        </a>
+        <nav class="desktop-nav" aria-label="Navegação principal">
+          <a href="#/explorar">Explorar</a>
+          <a href="#/comprador">Área do comprador</a>
+          <a href="#/vendedor">Área do vendedor</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu"><svg><use href="#i-menu"></use></svg></button>
+          <a class="btn btn-primary header-sell" href="#/criar"><svg><use href="#i-plus"></use></svg> Publicar anúncio</a>
+        </div>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Menu móvel">
+        <a href="#/explorar">Explorar produtos</a>
+        <a href="#/comprador">Área do comprador</a>
+        <a href="#/vendedor">Área do vendedor</a>
+        <a href="#/criar">Publicar anúncio</a>
+      </nav>
+    </header>
+
+    <main id="app" tabindex="-1"></main>
+
+    <nav class="mobile-bottom-nav" aria-label="Navegação móvel">
+      <a href="#/" data-nav="home"><svg><use href="#i-home"></use></svg><span>Início</span></a>
+      <a href="#/explorar" data-nav="explorar"><svg><use href="#i-search"></use></svg><span>Pesquisar</span></a>
+      <a href="#/criar" class="mobile-create" data-nav="criar"><span><svg><use href="#i-plus"></use></svg></span><small>Vender</small></a>
+      <a href="#/comprador" data-nav="comprador"><svg><use href="#i-heart"></use></svg><span>Guardados</span></a>
+      <a href="#/vendedor" data-nav="vendedor"><svg><use href="#i-user"></use></svg><span>Conta</span></a>
+    </nav>
+
+    <div class="toast-region" id="toast-region" aria-live="polite"></div>
+
+    <dialog class="contact-dialog" id="contact-dialog">
+      <button class="dialog-close icon-btn" data-close-dialog aria-label="Fechar"><svg><use href="#i-x"></use></svg></button>
+      <span class="whatsapp-badge"><svg><use href="#i-message"></use></svg></span>
+      <p class="eyebrow">Contacto por WhatsApp</p>
+      <h2 id="contact-title">Falar com o vendedor</h2>
+      <p id="contact-copy">Será aberta uma conversa com uma mensagem já preparada.</p>
+      <div class="message-preview" id="message-preview"></div>
+      <button class="btn btn-whatsapp btn-full" id="simulate-whatsapp">Continuar para o WhatsApp</button>
+      <small>Modo de demonstração — nenhum contacto real será iniciado.</small>
+    </dialog>
+
+    <dialog class="success-dialog" id="success-dialog">
+      <span class="success-badge"><svg><use href="#i-check"></use></svg></span>
+      <p class="eyebrow">Anúncio publicado</p>
+      <h2>Já está no Mercado GB!</h2>
+      <p>O teu anúncio foi guardado neste dispositivo e já aparece na pesquisa.</p>
+      <div class="dialog-actions">
+        <a class="btn btn-primary" id="view-new-listing" href="#/">Ver anúncio</a>
+        <a class="btn btn-ghost" href="#/vendedor" data-close-success>Gerir anúncios</a>
+      </div>
+    </dialog>
+
+    <template id="product-card-template">
+      <article class="product-card">
+        <a class="product-media" href="#">
+          <span class="product-visual"></span>
+          <span class="condition-pill"></span>
+        </a>
+        <button class="favorite-btn" aria-label="Guardar anúncio"><svg><use href="#i-heart"></use></svg></button>
+        <div class="product-info">
+          <p class="product-price"></p>
+          <h3><a class="product-title" href="#"></a></h3>
+          <div class="product-meta"><span class="product-location"></span><span class="product-time"></span></div>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
